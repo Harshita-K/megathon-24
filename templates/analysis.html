@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Depth Analysis</title>
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+    <style>
+        /* General body styling */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        body {
+            background-image: url('../static/9520773.jpg'); /* Replace 'background.jpg' with the path to your image */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Button styling */
+        .analysis-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 30px; /* Rounded corners */
+            margin: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        /* Hover effect for buttons */
+        .analysis-button:hover {
+            background-color: #555;
+        }
+        #feedback-text {
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+    </style>
+    
+</head>
+<body>
+    <div id="feedback-text" style="margin-top: 20px; font-size: 18px; color: #333;"></div>
+
+    <!-- Feedback Button -->
+    <button class="analysis-button" onclick="generateAverageFeedback()">Get Overall Mood Feedback</button>
+
+
+</body>
+</html>
